@@ -15,7 +15,7 @@ export const checkTimeConflict = async (startTime: string, endTime: string) => {
 // Agregar un bloque de tiempo si no hay conflicto
 export const addTimeBlock = async (block: { startTime: string; endTime: string; userId: string; color: string }) => {
   const conflict = await checkTimeConflict(block.startTime, block.endTime);
-  
+
   if (conflict) {
     throw new Error("El bloque de tiempo se solapa con otro existente.");
   }

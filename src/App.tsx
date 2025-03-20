@@ -1,3 +1,4 @@
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import Users from "./components/Users";
 import TimeBlocks from "./components/TimeBlocks";
 import Dashboard from "./pages/Dashboard";
